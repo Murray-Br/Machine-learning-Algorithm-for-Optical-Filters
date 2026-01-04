@@ -34,6 +34,7 @@ The core physics simulation that calculates optical properties of thin film stac
 
 **Example stack in the code:**
 ```python
+# Variable name in main.py is 'layers'
 layers = [
     ['air', 1000],           # Incident medium
     ['quartz', 5],           # 5 nm quartz layer
@@ -75,6 +76,8 @@ A simple command-line interface for building filter stacks.
 - Validates inputs and confirms selections
 
 **Materials available:** low, high, mid (referring to refractive index categories)
+
+**Note:** The materials in `inputs.py` are simplified placeholders. The actual material database (`refractive-indexB.csv`) contains comprehensive optical data for many materials including: silver, aluminium, aluminium oxide, gold, glass, cobalt, chromium, copper, gallium nitride, indium tin oxide, magnesium oxide, nickel, polyethylene, platinum, quartz, silicon, silicon nitride, silicon oxide, titanium, tin oxide, tungsten, air, and various polymers (PVA, PVC, PVP, PMMA).
 
 ### 4. Data Files
 
